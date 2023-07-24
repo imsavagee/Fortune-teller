@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fortune teller</title>
 </head>
@@ -27,21 +27,20 @@
         <div class="inner-container">
             <h2 class="h2">Click on the button to get started</h2>
             <button class="dare-btn">Dare to press me</button>
-            <h2 class="dare-btn-2">Click me </h2>
+            <h3 class="dare-btn-2">Click me </h3>
             <div class="names">
-                <h2>Choose your name wisely 😈</h2>
-                <p> <span id="ishrat">ISHRAT   </span><span id="yamin">YAMIN    </span><span id="shiba">SHIBA </span>
-                </p><br>
-                <p> <span id="shabnoor">SHABNOOR</span> <span id="farid">FARID </span> </p><br>
-                <p> <span id="abdul">ABDUL</span> <span id="farheen">FARHEEN</span> <span id="shehzad">SHEHZAD</span>
-                </p><br>
-
-                <p> <span id="farhat">FARHAT</span> <span id="sufiya">SUFIYA</span>
-                    <span id="zoya"> ZOYA</span> <span id="anam">ANAM</span>
-                </p>
+                <h2 class="third-h2">Choose your name wisely <span class="devil-icon">😈</span></h2>
+                <form action="#" method="post">
+                    <input type="text" id="input" placeholder="Enter your name..." required>
+                    <p id="button">Dare to submit</p>
+                </form>
+                
             </div>
-            <div id="result"><span id="name"></span><h3 class="fortuneQuotes"></h3></div>
+            <div id="result">
+                <h3 class="fortuneQuotes"></h3>
+            </div>
         </div>
+        <button class="reload-btn" onclick="window.location.reload()">Want to see more</button>
     </div>
     <script src="index.js"></script>
 

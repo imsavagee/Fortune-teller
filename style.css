@@ -16,67 +16,110 @@ body{
     background-size: contain;
     background-repeat: repeat;
 
+
 }
 
 .container h1 {
     color: rgb(250, 136, 136);
     font-size: 6rem;
     font-family: 'Eater', cursive;
-
+    text-shadow: 15px 15px 10px rgb(132, 71, 71);
+    margin-bottom: 8%;
 }
 
 .container img {
-
     width: 5rem;
 }
 
 .inner-container {
-    margin-top: 2rem;
-    position: relative;
-    left: 25%;
+    margin: 0 auto;
     background-color: rgb(224, 192, 192);
     width: 50%;
-    /* height: 30vh; */
-    background-size: 90% 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 7px dotted rgb(239, 147, 147);
+    border: 9px dotted rgb(239, 147, 147);
+
 }
 
 .inner-container h2 {
     font-family: 'Mystery Quest', cursive;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 2rem 0;
+    text-shadow: 8px 8px 8px black;
 }
 
 .inner-container .dare-btn {
     background-color: rgb(173, 103, 103);
+    border: 1px solid transparent;
+    border-radius: 10px;
     color: aliceblue;
     margin-top: 2rem;
     width: 12vw;
     padding: 1rem;
     font-size: 1rem;
     font-family: 'Mystery Quest', cursive;
-
 }
 
 .inner-container .dare-btn:hover {
     background-color: rgb(151, 69, 69);
-    transition: 1s;
+    transition: .8s;
     cursor: pointer;
+    box-shadow: 7px 7px 8px rgb(173, 103, 103);
 }
 
 .dare-btn-2 {
+    font-size: 1.5rem ; 
+    margin: 0 auto;
+    width: 30%;
     display: none;
     cursor: pointer;
+    border: 5px solid black;
 }
 
-.inner-container .names span {
-    padding: 1rem;
-    cursor: pointer;
-    opacity: 0.8;
-    font-size: 1.5rem;
 
+
+.names .devil-icon{
+    width: 3rem;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+
+    }
+    /* 10%{
+        transform: rotate(10%);
+    }
+    20%{
+        transform: rotate(20%);
+    }
+    30%{
+        transform: rotate(30%);
+    }
+    40%{
+        transform: rotate(40%);
+    }
+    50%{
+        transform: rotate(50%);
+    }
+    60%{
+        transform: rotate(60%);
+    }
+    70%{
+        transform: rotate(70%);
+    }
+
+    80%{
+        transform: rotate(80%);
+    }
+    90%{
+        transform: rotate(90%);
+    }
+    100%{
+        transform: rotate(100%);
+    } */
 }
 
 .inner-container .names span:hover {
@@ -102,9 +145,35 @@ body{
 .fortuneQuotes {
     animation: 2s;
     display: inline;
+    font-size: 2rem;
+    word-spacing: .8rem;
 
 }
 
+#input{
+    width: 40%;
+    line-height: 3rem;
+    opacity: 0.5;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+#button{
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.reload-btn{
+    font-size: 1rem;
+    width: 10%;
+    height: 8%;
+    display: none;
+    margin: 0 auto;
+    background-color: rgb(165, 63, 63);
+    color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 8px ;
+}
 @media only screen and (max-width:710px) {
     .container h1 {
         padding-top: 2rem;
@@ -143,6 +212,10 @@ body{
     }
 
     .fortuneQuotes {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        word-spacing: 1rem;
+    }
+    .reload-btn{
+        width: 40%;
     }
 }
