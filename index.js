@@ -8,6 +8,7 @@ let names = document.getElementsByClassName('names')[0]
 let subVal = document.getElementById('input')
 let btn3 = document.getElementById('button')
 let reload = document.getElementsByClassName('reload-btn')[0]
+let input = document.getElementById('input')
 
 
 btn.addEventListener("click", function () {
@@ -59,4 +60,14 @@ btn3.addEventListener('click', () => {
     subVal.style.display = 'none'
     quotes.innerHTML = future()
     reload.style.display = 'block'
+})
+input.addEventListener('keypress', (e) => {
+    if(e.key==='Enter'){
+        btn3.style.display = 'none'
+    finalH2.style.display = 'none'
+    subVal.style.display = 'none'
+    quotes.innerHTML = future()
+    reload.style.display = 'block'
+    }
+    
 })

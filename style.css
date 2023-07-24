@@ -89,37 +89,6 @@ body{
         transform: rotate(359deg);
 
     }
-    /* 10%{
-        transform: rotate(10%);
-    }
-    20%{
-        transform: rotate(20%);
-    }
-    30%{
-        transform: rotate(30%);
-    }
-    40%{
-        transform: rotate(40%);
-    }
-    50%{
-        transform: rotate(50%);
-    }
-    60%{
-        transform: rotate(60%);
-    }
-    70%{
-        transform: rotate(70%);
-    }
-
-    80%{
-        transform: rotate(80%);
-    }
-    90%{
-        transform: rotate(90%);
-    }
-    100%{
-        transform: rotate(100%);
-    } */
 }
 
 .inner-container .names span:hover {
